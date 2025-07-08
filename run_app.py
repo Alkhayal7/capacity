@@ -28,12 +28,7 @@ def main():
     if not check_requirements():
         sys.exit(1)
     
-    # Check if data file exists
-    # if not os.path.exists('coordinates_detailed.csv'):
-    #     print("❌ Error: ")
-    #     print("   Please ensure the CSV file is in the project directory.")
-    #     sys.exit(1)
-    
+
     # Start Streamlit app
     print("🌐 Starting web interface...")
     print("📖 The app will open in your default browser")
@@ -44,7 +39,7 @@ def main():
             sys.executable, 
             "-m", "streamlit", "run", 
             "streamlit_app.py",
-            "--server.port=8501",
+            "--server.port=8507",
             "--server.address=localhost",
             "--browser.gatherUsageStats=false"
         ])

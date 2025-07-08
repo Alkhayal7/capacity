@@ -15,7 +15,6 @@ st.set_page_config(
 
 # Title and description
 st.title("Cell Tower Capacity Heatmap Visualizer")
-st.markdown("Upload your tower data and visualize capacity coverage with interactive heatmaps")
 
 # Initialize session state
 if 'map_generated' not in st.session_state:

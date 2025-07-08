@@ -25,4 +25,4 @@ streamlit run streamlit_app.py
 
 ### 3. Open in Browser
 
-The application will automatically open at `http://localhost:8501`
+The application will automatically open at `http://localhost:8507`
