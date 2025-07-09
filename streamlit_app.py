@@ -116,7 +116,7 @@ if not st.session_state.map_generated and st.session_state.uploaded_data is not 
                 noise_distance_factor=0.001,
                 grid_resolution=500,  # Good balance for initial load
                 heatmap_radius=8,
-                heatmap_blur=5,
+                heatmap_blur=1,
                 decay_strength=1.0,
                 heatmap_opacity=0.7,
                 uploaded_data=st.session_state.uploaded_data,
@@ -243,7 +243,7 @@ heatmap_radius = st.sidebar.number_input(
 
 heatmap_blur = st.sidebar.number_input(
     "Heatmap Blur", 
-    min_value=1, max_value=20, value=5,
+    min_value=0, max_value=20, value=1,
     help="Blur amount for heatmap"
 )
 

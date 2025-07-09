@@ -455,7 +455,7 @@ def create_folium_map(df, heat_data, capacity_min, capacity_max, max_range_meter
 
 def generate_heatmap(capacity_min=20, capacity_max=190, max_range_meters=400, 
                     noise_strength=0.1, noise_distance_factor=0.001, 
-                    grid_resolution=1000, heatmap_radius=8, heatmap_blur=5,
+                    grid_resolution=1000, heatmap_radius=8, heatmap_blur=1,
                     decay_strength=1.0, heatmap_opacity=0.7, progress_callback=None, 
                     uploaded_data=None, map_style='CartoDB voyager'):
     """
